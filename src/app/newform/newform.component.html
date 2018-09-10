@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <label>
+        FirstName:
+        <input type="text" [formControl]="name" required>
+      </label><br>
+      <label>
+        LastName:
+        <input type="text" [formControl]="lname">
+      </label><br>
+      <label>
+        Street:
+        <input type="text" [formControl]="street">
+      </label><br>
+      <label>
+        City:
+        <input type="text" [formControl]="city">
+      </label><br>
+      <label>
+        State:
+        <input type="text" [formControl]="state">
+      </label><br>
+      <label>
+        Zip:
+        <input type="text" [formControl]="zip">
+      </label><br>
+      <label>
+        Age:
+        <input type="text" [formControl]="age">
+      </label><br>
+      <label>
+        Department:
+        <input type="text" [formControl]="depo">
+      </label>
+      <p>
+        <button (click)="updateName()">Update Name</button>
+      </p>
+      <p class="list-group-item">
+        Value: {{ name.value}} <span>{{price.value}}</span>
+      </p>
+      <p class="list-group-item">
+        Value: {{ lname.value }}
+      </p>
+      <p class="list-group-item">
+        Value: {{ street.value }}
+      </p>
+      <p class="list-group-item">
+        Value: {{ city.value }}
+      </p>
+      <p class="list-group-item">
+        Value: {{ state.value }}
+      </p>
+      <p class="list-group-item">
+        Value: {{ zip.value }}
+      </p>
+      <p class="list-group-item">
+        Value: {{ age.value }}
+      </p>
+      <p class="list-group-item">
+        Value: {{ depo.value }}
+      </p>
+    </div>
+    <div class="col">
+      <label>
+        PriceValue:
+        <input type="text" [formControl]="price">
+      </label><br>
+    </div>
+  </div>
+</div>

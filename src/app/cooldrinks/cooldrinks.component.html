@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="row">
+      <div  class="card" style="width:380px" *ngFor="let x of  sweets"> 
+        <div class="card-body">
+          
+          <img src="{{x.sweet1}}" routerLink="sweet1">
+          <img src="{{x.sweet2}}" routerLink="sweet2">
+        </div>
+      </div>
+    </div>  
+  </div>
+  <router-outlet></router-outlet>
